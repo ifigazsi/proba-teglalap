@@ -1,0 +1,111 @@
+* {
+  margin: auto;
+  padding: 0px;
+}
+
+body {
+  background-color: black;
+}
+
+#tabla {
+  position: relative;
+  background-image: url(./tablahatter.jpg);
+  background-repeat: no-repeat;
+  width: 100vh;
+  height: 70vh;
+  margin-top: 10vh;
+}
+
+h1 {
+  color: wheat;
+  text-align: center;
+  margin-top: 5vh;
+  font-size: 2em;
+}
+
+#teglalap {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  border: 5px solid whitesmoke;
+}
+
+#szamolas {
+  position: absolute;
+  color: whitesmoke;
+  height: 25%;
+  padding: 5%;
+  top: 105px;
+}
+
+#a {
+  display: inline-block;
+  top: 400px;
+  left: 150px;
+  position: absolute;
+  color: whitesmoke;
+}
+
+#b {
+  display: inline-block;
+  top: 300px;
+  left: 400px;
+  position: absolute;
+  color: whitesmoke;
+}
+
+@keyframes utsobetu {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+
+
+}
+
+#utsoa {
+  display: inline-block;
+  animation-name: utsobetu;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes eltunes {
+  0% {
+    opacity: 1;
+  }
+
+  10% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  70% {
+    opacity: 0.1;
+  }
+}
+
+#teglalapSzoveg {
+  animation-name: eltunes;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.neonText {
+  color: #799901;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #799901,
+    0 0 82px #799901,
+    0 0 92px #149900,
+    0 0 102px #117701,
+    0 0 151px #117701;
+}
